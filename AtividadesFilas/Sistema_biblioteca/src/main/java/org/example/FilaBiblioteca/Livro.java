@@ -35,9 +35,6 @@ public class Livro {
         }
     }
 
-
-
-
     public void devolverLivro() {
         disponibilidade = true;
         if (!filaEspera.isEmpty()) {

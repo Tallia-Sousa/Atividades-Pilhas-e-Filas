@@ -14,8 +14,15 @@ public class Biblioteca {
 
 
     public void cadastrarLivro(String nomeLivro) {
-        Livro livro = new Livro(nomeLivro);
-        biblioteca.add(livro);
+        Livro livro = encontrarLivro(nomeLivro);
+
+        if (livro != null) {
+            System.out.println("Livro já existe");
+        } else {
+            livro = new Livro(nomeLivro);
+            biblioteca.add(livro);
+            System.out.println("Livro cadastrado com sucesso");
+        }
     }
 
     public void requisitarLivro(String nomeLivro, String pessoa) {

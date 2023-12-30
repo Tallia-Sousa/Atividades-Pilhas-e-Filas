@@ -60,7 +60,7 @@ public class SistemaBiblioteca {
         System.out.print("Digite o nome do livro: ");
         String nomeLivro = scanner.next();
         biblioteca.cadastrarLivro(nomeLivro);
-        System.out.println("Livro cadastrado com sucesso!");
+
     }
 
     private static void requisitarLivro(Biblioteca biblioteca){
